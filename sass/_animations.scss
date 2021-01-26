@@ -1,0 +1,93 @@
+// Loaader animations
+@keyframes animateBg {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(-45deg);
+  }
+
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes animateDots {
+  0% {
+    transform: scale(1);
+  }
+
+  80%,
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// Showcase heading neon effect
+@keyframes neonPrimary {
+  0% {
+    text-shadow: 0 0 0.5rem #c40a51;
+  }
+
+  15% {
+    text-shadow: 0 0.5rem 4.5rem #900c3f;
+  }
+
+  50% {
+    text-shadow: 0 0 1rem #c52d68;
+  }
+
+  85% {
+    text-shadow: 0 -0.5rem 5rem #ff5898;
+  }
+
+  100% {
+    text-shadow: 0 0 0.5rem #900c3f;
+  }
+}
+
+@keyframes neonSub {
+  0% {
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.8);
+  }
+
+  15% {
+    text-shadow: 0 0.5rem 4rem rgba(202, 202, 202, 0.8);
+  }
+
+  50% {
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.9);
+  }
+
+  85% {
+    text-shadow: 0 -0.5rem 3rem rgba(255, 241, 241, 0.9);
+  }
+
+  100% {
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.8);
+  }
+}
+
+// Contact icons pulsation
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,44 @@
+.contact {
+  background-color: $color-grey-light-1;
+
+  &__container {
+    display: grid;
+    gap: 2rem;
+    // grid-template-columns: repeat(auto-fit(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-grey-light-3;
+    height: 23rem;
+    border-radius: $br-normal;
+    box-shadow: $bs-normal;
+    padding: 0;
+
+    &:nth-of-type(even) {
+      background-color: $color-grey-dark-2;
+    }
+  }
+
+  &__icon {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &__link {
+    &,
+    &:active,
+    &:visited {
+      // animation: pulsate 2200ms infinite; // ! pro mobilni verzi
+      transition: all 300ms;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

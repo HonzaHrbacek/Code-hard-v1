@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Share+Tech+Mono&display=swap");
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Share Tech Mono', monospace;
+
+// HEADINGS
+.header__heading--primary {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 18rem;
+  font-weight: 800;
+  letter-spacing: 2rem;
+  color: #c70039;
+  animation: neonPrimary 4s infinite;
+
+  @include respond(phone) {
+    font-size: 13rem;
+  }
+}
+
+.header__heading--secondary {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 8rem;
+  letter-spacing: 0.5rem;
+  animation: neonSub 3s infinite;
+  transition: all 200ms;
+
+  @include respond(phone) {
+    font-size: 5rem;
+  }
+}
+
+.section-heading {
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+
+  &-main {
+    font-size: 6rem;
+    color: $color-primary;
+  }
+  &-sub {
+    font-size: 3.5rem;
+    color: $color-grey-dark-3;
+  }
+}
+
+.card__heading--back {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: $color-white;
+}
+
+// NORMAL TEXT
+.text {
+  color: $color-grey-dark-3;
+  font-size: 1.5rem;
+  line-height: 2;
+
+  &-light {
+    color: $color-grey-light-1;
+  }
+
+  &-catchy {
+    font-size: 2rem;
+    font-weight: 900;
+    color: $color-primary;
+    // color: $color-primary-dark-1;
+  }
+
+  &-catchy-black {
+    font-size: 2rem;
+    font-weight: 900;
+    color: $color-black;
+  }
+
+  &-catchy-white {
+    font-size: 4rem;
+    font-weight: 900;
+    color: $color-white;
+  }
+
+  &__before-quote {
+    z-index: 2;
+  }
+}

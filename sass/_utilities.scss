@@ -1,0 +1,57 @@
+// PADDING
+.section-padding {
+  padding: 2rem 8rem 2rem;
+
+  @include respond(tab-port) {
+    padding: 1rem 8rem 1rem;
+  }
+}
+
+.section-padding--bigger {
+  padding: 5rem 8rem 6rem;
+
+  @include respond(big-desktop) {
+    padding: 14rem 8rem 6rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 2rem 4rem 2rem;
+  }
+
+  @include respond(phone) {
+    padding: 1rem 4rem 1rem;
+  }
+}
+
+.section-padding-top--reduced {
+  padding-top: 4rem;
+}
+
+.pa-text-box {
+  padding: 3rem 4rem;
+}
+
+// MARGINS
+.ma-bottom-large {
+  margin-bottom: 4rem;
+}
+
+.ma-bottom-big {
+  margin-bottom: 2.5rem;
+}
+
+.ma-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.ma-top-large {
+  margin-top: 4rem;
+}
+
+.ma-top-big {
+  margin-top: 2.5rem;
+}
+
+.section-ma-top {
+  margin-top: 20rem;
+}
